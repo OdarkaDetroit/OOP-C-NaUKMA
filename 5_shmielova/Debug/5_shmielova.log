@@ -1,0 +1,15 @@
+﻿  5_shmielova.cpp
+C:\Users\dasha\Downloads\VSs workspace\5_shmielova\5_shmielova.cpp(24,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\dasha\Downloads\VSs workspace\5_shmielova\5_shmielova.cpp(30,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\dasha\Downloads\VSs workspace\5_shmielova\5_shmielova.cpp(36,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\dasha\Downloads\VSs workspace\5_shmielova\5_shmielova.cpp(42,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\dasha\Downloads\VSs workspace\5_shmielova\5_shmielova.cpp(48,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\dasha\Downloads\VSs workspace\5_shmielova\5_shmielova.cpp(54,23): warning C4018: '<': signed/unsigned mismatch
+  Hornerr.cpp
+C:\Users\dasha\Downloads\VSs workspace\5_shmielova\Hornerr.cpp(7,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\dasha\Downloads\VSs workspace\5_shmielova\Hornerr.cpp(20,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\dasha\Downloads\VSs workspace\5_shmielova\Hornerr.cpp(27,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\dasha\Downloads\VSs workspace\5_shmielova\Hornerr.cpp(39,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\dasha\Downloads\VSs workspace\5_shmielova\Hornerr.cpp(45,2): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  Generating Code...
+  5_shmielova.vcxproj -> C:\Users\dasha\Downloads\VSs workspace\5_shmielova\Debug\5_shmielova.exe
