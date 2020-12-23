@@ -19,8 +19,10 @@ void zet(double& y, double& x, unsigned int& k, int& rqP)
 			k--;
 		}
 		else
-			x *= x; k /= 2;
-
+		{
+			x *= x;
+			k /= 2;
+		}
 		zet(y, x, k, rqP);
 	}
 }
@@ -29,8 +31,10 @@ double power(double x, unsigned int n)
 {
 	double y = 1;
 	int rqP = 0;
+
 	zet(y, x, n, rqP);
-	cout << "by " << rqP << " steps: " << '\n';
+	cout << "By " << rqP << " steps: " << '\n';
+
 	return y;
 }
 
@@ -53,18 +57,19 @@ void fib(double& f1, double& f2, unsigned int n, int& rqP)
 	}
 };
 
-double Fibonaci(unsigned int n, int& rqP)
+double Fibonaci(unsigned int n)
 {
 	double f0 = 0, f1 = 1;
 	switch (n)
 	{
 	case 0:
-		return f0; break;
+		return f0;
 	case 1:
-		return f1; break;
+		return f1;
 	default:
+		int rqP = 0;
 		fib(f0, f1, n, rqP);
-		cout << "by " << rqP << " steps: " << '\n';
+		cout << "By " << rqP << " steps: " << '\n';
 		return f1;
 	}
 };
@@ -83,75 +88,44 @@ struct Vector2
 	int _1, _2;
 };
 
-  void multiplyMatr(Matrix2x2& a, Matrix2x2& b)
+Matrix2x2 multiplyMatr(Matrix2x2& a, Matrix2x2& b)
 {
-	// _11 _12
-	// _21 _22
 	  Matrix2x2 res;
 	  res._11 = a._11* b._11 + a._12 * b._21;
 	  res._12 = a._11* b._21 + a._12 * b._22;
 	  res._21 = a._21* b._11 + a._22 * b._21;
 	  res._22 = a._21* b._21 + a._22 * b._22;
 
-	a = res;
-	//return a;
+	//a = res;
+	return res;
 }
 // Множення матриці на вектор
-Vector2 multiplyMatrVect( Matrix2x2 a,  Vector2 v)
+Vector2 multiplyMatrVect(Matrix2x2& a, Vector2& v )
 {
 	Vector2 res;
+
 	res._1 = a._11 * v._1 + a._12 * v._2;
 	res._2 = a._21 * v._1 + a._22 * v._2;
 
 	return res;
 }
 
-//Matrix2x2 unitMatrix = { 1,0,0,1 };
-
-//Matrix2x2 quickPower(Matrix2x2 first, unsigned int n, Matrix2x2 second, int& rqP)
-//{
-//	if (n == 0 || n == 1) return second;
-//
-//	if (n > 0)
-//	{
-//		++rqP;
-//
-//		if (n % 2 == 1)
-//		{
-//			multiplyMatr(first, second); n--;
-//			/*first = second * first;
-//			n--;
-//			return first;*/
-//		}
-//
-//		else
-//		{
-//			multiplyMatr(first, second); n--;
-//			/*first = first * first; n /= 2;
-//			return first;*/
-//		}
-//		quickPower(first, n, second, rqP);
-//	}
-//}
-
-Matrix2x2 quickPower(Matrix2x2 first, int n, int& rqP)
+Matrix2x2 quickPower(Matrix2x2& first, int n, int& rqP)
 {
 	++rqP;
 
 	Matrix2x2 second = { 1, 1, 1, 0 };
 
 	if (n == 0 || n == 1) return second;
-	
-	++rqP;
-	quickPower(first, n/2, rqP);
-	++rqP;
-	multiplyMatr(first, first);
 
-    if (n % 2 != 0)
-	{
+	//	if (n > 0)
+		//{
+	quickPower(first, n / 2, rqP);
+
+	multiplyMatr(first, first);
+	if (n % 2 != 0)
 		multiplyMatr(first, second);
-		++rqP;
-	}
+
 	return first;
 }
 

@@ -11,37 +11,47 @@ int main()
 		cout << "The 1st task performance: \n\n";
 
 		int rqP = 0, x = 2, n = 1;
-		cout << power(x, n) << '\n';
-		rqP = 0, x = 4, n = 2;
-		cout << power(x, n) << '\n';
-		rqP = 0, x = 6, n = 3;
-		cout << power(x, n) << '\n';
-		rqP = 0, x = 8, n = 4;
-		cout << power(x, n) << "\n\n";
+		for (int j = 0; j < 10; j++)
+		{
+			cout << power(x, n) << '\n';
+			cout << "checking by defoult: " << pow(x, n) << "\n\n";
+			x += 2;
+			n += 2;
+		}
+		cout << "\n\n";
 	}
 	{
 		cout << "The 2nd task performance: \n\n";
 
 		int n = 2, rqP = 0;
-		for (int i = 0; i < 5; i++)
+		for (int i = 0; i < 10; i++)
 		{
-			cout << Fibonaci(n, rqP) << '\n';
-			++n;
+			cout << Fibonaci(n) << '\n';
+			n+=3;
 		}
 		cout << '\n';
 	}
 	{
 		cout << "The 3rd task performance: \n\n";
 
+		//int n = 1, rqP = 0;
+		//cout << quickFib(n, rqP) << '\n';
+		//n = 2, rqP = 0;
+		//cout << quickFib(n, rqP) << '\n';
+		//n = 3, rqP = 0;
+		//cout << quickFib(n, rqP) << '\n';
+		//n = 5, rqP = 0;
+		//cout << quickFib(n, rqP) << '\n';
+		//n = 1024, rqP = 0;
+		//cout << quickFib(n, rqP) << '\n';
+
+
 		int n = 1, rqP = 0;
-		cout << quickFib(n, rqP) << '\n';
-		n = 2, rqP = 0;
-		cout << quickFib(n, rqP) << '\n';
-		n = 3, rqP = 0;
-		cout << quickFib(n, rqP) << '\n';
-		n = 5, rqP = 0;
-		cout << quickFib(n, rqP) << '\n';
-		n = 8, rqP = 0;
-		cout << quickFib(n, rqP) << '\n';
+		for (int l = 0; l < 10; l++)
+		{
+			cout << quickFib(n, rqP) << '\n';
+			n += 3;
+			rqP = 0;
+		}
 	}
 }

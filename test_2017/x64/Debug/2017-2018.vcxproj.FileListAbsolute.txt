@@ -1,0 +1,2 @@
+C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\test_2017\x64\Debug\Project_2017.exe
+C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\test_2017\x64\Debug\Project_2017.pdb

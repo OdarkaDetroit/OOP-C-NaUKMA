@@ -1,0 +1,29 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(467,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (2017-2018.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Functions.cpp
+C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\2017-2018\Functions.cpp(1,1): warning C4335: Mac file format detected: please convert the source file to either DOS or UNIX format
+C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\2017-2018\Functions.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\2017-2018\Functions.cpp(2,11): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\2017-2018\Functions.cpp(3,21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\2017-2018\Functions.cpp(3,17): error C2371: 'w': redefinition; different basic types
+C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\2017-2018\Functions.cpp(3): message : see declaration of 'w'
+C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\2017-2018\Functions.cpp(3,22): error C2065: 'z': undeclared identifier
+C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\2017-2018\Functions.cpp(3,28): error C2065: 'x': undeclared identifier
+C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\2017-2018\Functions.cpp(3,32): error C2065: 'y': undeclared identifier
+C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\2017-2018\Functions.cpp(3,37): error C2065: 'x': undeclared identifier
+C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\2017-2018\Functions.cpp(3,41): error C2065: 'y': undeclared identifier
+C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\2017-2018\Functions.cpp(3,46): error C2065: 'z': undeclared identifier
+C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\2017-2018\Functions.cpp(3,52): error C2065: 'x': undeclared identifier
+C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\2017-2018\Functions.cpp(3,56): error C2065: 'y': undeclared identifier
+C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\2017-2018\Functions.cpp(3,61): error C2065: 'x': undeclared identifier
+C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\2017-2018\Functions.cpp(3,65): error C2065: 'y': undeclared identifier
+C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\2017-2018\Functions.cpp(3,76): error C2143: syntax error: missing ';' before '<<'
+C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\2017-2018\Functions.cpp(3,76): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\2017-2018\Functions.cpp(3,107): error C2059: syntax error: '}'
+C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\2017-2018\Functions.cpp(3,107): error C2143: syntax error: missing ';' before '}'
+C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\2017-2018\Functions.cpp(5,10): error C2059: syntax error: 'while'
+C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\2017-2018\Functions.cpp(5,26): error C2143: syntax error: missing ';' before '{'
+C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\2017-2018\Functions.cpp(5,26): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\2017-2018\Functions.cpp(5,53): error C2059: syntax error: 'return'
+C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\2017-2018\Functions.cpp(5,63): error C2059: syntax error: '}'
+  main.cpp
+  Generating Code...
