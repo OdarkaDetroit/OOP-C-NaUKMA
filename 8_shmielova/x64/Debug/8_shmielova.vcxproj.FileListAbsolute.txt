@@ -1,2 +1,0 @@
-C:\Git_pp\8_shmielova\x64\Debug\8_shmielova.exe
-C:\Git_pp\8_shmielova\x64\Debug\8_shmielova.pdb

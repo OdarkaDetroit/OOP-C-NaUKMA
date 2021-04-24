@@ -1,0 +1,5 @@
+﻿  1_shmielova.cpp
+C:\Users\dasha\Downloads\VSs workspace\OOP\1_shmielova\1_shmielova.cpp(67,1): error C2084: function 'Point::~Point(void)' already has a body
+C:\Users\dasha\Downloads\VSs workspace\OOP\1_shmielova\Fun.h(54): message : see previous definition of '{dtor}'
+  Main.cpp
+  Generating Code...

@@ -1,0 +1,34 @@
+﻿  shmielova_test.cpp
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HSquare.h(26,1): warning C4250: 'HSquare': inherits 'HRectangle::HRectangle::height' via dominance
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HRectangle.h(29): message : see declaration of 'HRectangle::height'
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HSquare.h(26,1): warning C4250: 'HSquare': inherits 'HRectangle::HRectangle::width' via dominance
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HRectangle.h(30): message : see declaration of 'HRectangle::width'
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HSquare.h(26,1): warning C4250: 'HSquare': inherits 'HRectangle::HRectangle::setA' via dominance
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HRectangle.h(33): message : see declaration of 'HRectangle::setA'
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HSquare.h(26,1): warning C4250: 'HSquare': inherits 'HRectangle::HRectangle::setB' via dominance
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HRectangle.h(34): message : see declaration of 'HRectangle::setB'
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HSquare.h(26,1): warning C4250: 'HSquare': inherits 'HRectangle::HRectangle::setC' via dominance
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HRectangle.h(35): message : see declaration of 'HRectangle::setC'
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HSquare.h(26,1): warning C4250: 'HSquare': inherits 'HRectangle::HRectangle::setD' via dominance
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HRectangle.h(36): message : see declaration of 'HRectangle::setD'
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HSquare.h(26,1): warning C4250: 'HSquare': inherits 'HRectangle::HRectangle::apexA' via dominance
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HRectangle.h(39): message : see declaration of 'HRectangle::apexA'
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HSquare.h(26,1): warning C4250: 'HSquare': inherits 'HRectangle::HRectangle::apexB' via dominance
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HRectangle.h(40): message : see declaration of 'HRectangle::apexB'
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HSquare.h(26,1): warning C4250: 'HSquare': inherits 'HRectangle::HRectangle::apexC' via dominance
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HRectangle.h(41): message : see declaration of 'HRectangle::apexC'
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HSquare.h(26,1): warning C4250: 'HSquare': inherits 'HRectangle::HRectangle::apexD' via dominance
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HRectangle.h(42): message : see declaration of 'HRectangle::apexD'
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HSquare.h(26,1): warning C4250: 'HSquare': inherits 'HRectangle::HRectangle::side_ab' via dominance
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HRectangle.h(45): message : see declaration of 'HRectangle::side_ab'
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HSquare.h(26,1): warning C4250: 'HSquare': inherits 'HRectangle::HRectangle::side_bc' via dominance
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HRectangle.h(46): message : see declaration of 'HRectangle::side_bc'
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HSquare.h(26,1): warning C4250: 'HSquare': inherits 'HRectangle::HRectangle::side_cd' via dominance
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HRectangle.h(47): message : see declaration of 'HRectangle::side_cd'
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HSquare.h(26,1): warning C4250: 'HSquare': inherits 'HRectangle::HRectangle::side_da' via dominance
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HRectangle.h(48): message : see declaration of 'HRectangle::side_da'
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HSquare.h(26,1): warning C4250: 'HSquare': inherits 'HRectangle::HRectangle::area' via dominance
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\HRectangle.h(50): message : see declaration of 'HRectangle::area'
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\Container.h(190): warning C4172: returning address of local variable or temporary: res
+C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\Container.h(190): warning C4172: returning address of local variable or temporary: res
+  shmielova_test.vcxproj -> C:\Users\dasha\Downloads\VSs workspace\OOP\shmielova_test\Debug\shmielova_test.exe

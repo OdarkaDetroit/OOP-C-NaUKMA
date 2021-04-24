@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{6427D17A-D832-489A-8B4D-7E96438BB0E9}</ProjectGuid>
+    <ProjectGuid>{91E31AEA-311C-4372-B237-E3F91C5C7EF3}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>My7shmielova</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
@@ -148,10 +148,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="7_shmielova.cpp" />
-    <ClCompile Include="Functions.cpp" />
+    <ClCompile Include="String.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Functions.h" />
+    <ClInclude Include="String.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

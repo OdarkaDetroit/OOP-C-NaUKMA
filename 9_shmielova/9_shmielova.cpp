@@ -1,57 +1,114 @@
-﻿// 9_shmielova.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// 9_shmielova.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
-#include "Functions.h"
-#include <cassert>
-#include <cmath>
-
-# define M_PI 3.14159265358979323846
+#include "Array.h"
+#include "Time.h"
 
 using namespace std;
 
-// 1- sin(x) = x, [-1, 1];
-// 2- sin(x) = 0, [π - 1, π];
-// 3- ln(x) = 1, [2, 3];
-// 4- exp(x) = 2 - x, [0, 2] 
-
-double sin1(double x) { 
-	return sin(x)-x; 
-}
-double sin2(double x) { 
-	return sin(x); 
-}
-double ln(double x) { 
-	return log(x)-1; 
-}
-double expon(double x) { 
-	return exp(x)-2+x; 
-}
-
-
 int main()
 {
-	double a = 0; 
-	double b = 0;
-	double eps = 0.0001;
+	{//Testing DOUBLE
+		cout << " -=-=-=-=-=-=- Test array with double -=-=-=-=-=-=- \n\n";
+		try
+		{
+			Array<10, double> arr_d;
 
-	cout << "sin(x) = x, [-1, 1]"; 
-	cout << "    ";
-	a = -1; b = 1; 
-	cout << dichotomy(sin1, a, b, eps) << endl;
+			for (int i = 0, len = arr_d.size(); i < len; ++i)
+			{
+				arr_d[i] = (i + 0.1) * 2;
+				cout << "arr_d[" << i << "] -- " << arr_d[i] << '\n';
+			}
+			cout << arr_d[10] << '\n';
+		}
+		catch (const Array<10, double>::BadArray& badArray)
+		{
+			badArray.diagnose();
+		}
+	}
 
-	cout << "sin(x) = 0, [π - 1, π]";
-	cout << "    ";
-	a = M_PI-1; b = M_PI;
-	cout << dichotomy(sin2, a, b, eps) << endl;
+	{//Testing CHAR
+		cout << "\n\n -=-=-=-=-=-=- Test array with char -=-=-=-=-=-=- \n\n";
+		try
+		{
+			Array<5, char> arr_c;
 
-	cout << "ln(x) = 1, [2, 3]";
-	cout << "    ";
-	a = 2; b = 3;
-	cout << dichotomy(ln, a, b, eps) << endl;
+			arr_c[0] = 'c';
+			arr_c[1] = 'h';
+			arr_c[2] = 'a';
+			arr_c[3] = 'r';
 
-	cout << "exp(x) = 2 - x, [0, 2]";
-	cout << "    ";
-	a = 0; b = 2;
-	cout << dichotomy(expon, a, b, eps) << endl;
+			for (int i = 0, len = arr_c.size(); i < len; ++i)
+			{
+				cout << "arr_c[" << i << "] -- " << arr_c[i] << '\n';
+			}
+			cout << arr_c[10] << '\n';
+		}
+		catch (Array<5, char>::BadArray& badArray)
+		{
+			badArray.diagnose();
+		}
+	}
+
+	{//Testing TIME
+		cout << "\n\n -=-=-=-=-=-=- Test array with Time -=-=-=-=-=-=- \n\n";
+
+		try
+		{
+			Array<5, Time> arr_t;
+			const Time t1(1, 1, 1);
+			for (size_t i = 0; i < arr_t.size(); i++)
+			{
+				arr_t[i] = Time((i + 0.1) * 2, (i + 0.1) * 1.5, (i + 0.2) * 2);
+			}
+
+			for (size_t i = 0; i < arr_t.size(); i++)
+			{
+				cout << "arr_t[" << i << "] -- " << arr_t[i] << '\n';
+			}
+		}
+		catch (const Array<5, Time>::BadArray& badArray)
+		{
+			badArray.diagnose();
+		}
+	}
+
+	{//Testing methods and operators
+		cout << "\n\n -=-=-=-=-=-=- Test move and operator '=' -=-=-=-=-=-=- \n\n";
+
+		Array<3, Time> arr_t;
+
+		const Time t1(20, 10, 5), t2(2, 4, 6);
+
+		arr_t[0] = t1;
+		arr_t[1] = t2;
+
+		Array<3, Time> arr_t_2 = move(arr_t);
+
+		for (size_t i = 0; i < arr_t_2.size(); i++)
+		{
+			cout << "arr_t_2[" << i << "] -- " << arr_t_2[i] << '\n';
+		}
+
+		cout << "\n*created empty arr_t_3*\n -->";
+		Array<3, Time> arr_t_3;
+
+		arr_t_3 = move(arr_t_2);
+		cout << "___after move(arr_t_2):\n";
+		for (size_t i = 0; i < arr_t_3.size(); i++)
+		{
+			cout << "arr_t_3[" << i << "] -- " << arr_t_3[i] << '\n';
+		}
+
+		arr_t_3[0] = Time(1, 2, 3);
+		arr_t = move(arr_t_3);
+
+		for (size_t i = 0; i < arr_t.size(); i++)
+		{
+			cout << "arr_t[" << i << "] -- " << arr_t[i] << '\n';
+		}
+	}
+
+	return 0;
 }

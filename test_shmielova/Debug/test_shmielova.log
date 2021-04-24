@@ -1,5 +1,0 @@
-﻿  Functions.cpp
-C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\test_shmielova\Functions.h(12,2): warning C4091: 'typedef ': ignored on left of 'Struct' when no variable is declared
-C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\test_shmielova\Functions.cpp(57,27): warning C4018: '<': signed/unsigned mismatch
-C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\test_shmielova\Functions.cpp(119,27): warning C4018: '<': signed/unsigned mismatch
-  test_shmielova.vcxproj -> C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\test_shmielova\Debug\test_shmielova.exe

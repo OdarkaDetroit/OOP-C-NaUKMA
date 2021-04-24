@@ -1,4 +1,0 @@
-﻿  Functions.cpp
-C:\Users\dasha\Downloads\VSs workspace\2_shmielova\Functions.cpp(33,15): warning C4805: '==': unsafe mix of type 'double' and type 'bool' in operation
-C:\Users\dasha\Downloads\VSs workspace\2_shmielova\Functions.cpp(102): warning C4715: 'cycQuickPower': not all control paths return a value
-  2_shmielova.vcxproj -> C:\Users\dasha\Downloads\VSs workspace\2_shmielova\Debug\2_shmielova.exe

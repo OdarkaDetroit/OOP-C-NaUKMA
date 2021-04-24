@@ -1,3 +1,5 @@
-﻿  Functions.cpp
-C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\9_shmielova\Functions.cpp(80): warning C4715: 'dichotomy': not all control paths return a value
-  9_shmielova.vcxproj -> C:\Users\dasha\Downloads\VSs workspace\Procedural Progrmming\9_shmielova\Debug\9_shmielova.exe
+﻿  9_shmielova.cpp
+C:\Users\dasha\Downloads\VSs workspace\OOP\9_shmielova\9_shmielova.cpp(63,63): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\dasha\Downloads\VSs workspace\OOP\9_shmielova\9_shmielova.cpp(63,46): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\dasha\Downloads\VSs workspace\OOP\9_shmielova\9_shmielova.cpp(63,31): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  9_shmielova.vcxproj -> C:\Users\dasha\Downloads\VSs workspace\OOP\9_shmielova\Debug\9_shmielova.exe

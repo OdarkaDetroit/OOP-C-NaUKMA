@@ -1,2 +1,0 @@
-C:\Git_pp\test_2019\Debug\test_2019.exe
-C:\Git_pp\test_2019\Debug\test_2019.pdb
